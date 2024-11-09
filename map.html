@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Events Near You</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        /* Page Layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        h1 {
+            color: #274371;
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Map Container */
+        #map {
+            width: 90%;
+            max-width: 800px;
+            height: 400px;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Footer Information */
+        .info {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            font-size: 1em;
+            color: #555;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        /* Footer Links */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Find Events Near You</h1>
+<p class="info">Discover scholarship workshops, career fairs, and other professional development events in Illinois. Use the map below to locate opportunities near you.</p>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="map.js"></script>
+</body>
+</html>
